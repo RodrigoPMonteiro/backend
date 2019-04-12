@@ -33,10 +33,11 @@ io.on('connection', socket =>{
  //   useNewUrlParser: true
 //});
 
-mongoose.connect('mongodb+srv://rodrigomonteiro:user_adm@cluster0-wwudj.gcp.mongodb.net/test?retryWrites=true', {
+mongoose.connect('mongodb+srv://rodrigomonteiro:user_adm@mflix-rmhbu.mongodb.net/admin?retryWrites=true', {
     useNewUrlParser: true
 });
 
+// "mongodb+srv://rodrigomonteiro:user_adm@mflix-rmhbu.mongodb.net/admin"
 //"mongodb+srv://rodrigomonteiro:user_adm@cluster0-wwudj.gcp.mongodb.net/test" // --username rodrigomonteiro pwd: user_adm
 
 // torna a informação de io global
