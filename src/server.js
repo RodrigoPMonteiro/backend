@@ -61,6 +61,7 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')));
 // app.use --> importa a variavel "routes" do modulo [routes.js]
 app.use(require('./routes')); // './routes' --> indica que está na pasta local "src"
 
+
 // troca app.listen para server.listen
-server.listen(3333);
+server.listen(process.env.PORT || 3333);
 
