@@ -29,16 +29,9 @@ io.on('connection', socket =>{
 
 //mongoose.connect('mongodb+srv://omnistack:omnistack@mflix-rmhbu.mongodb.net/omnistack?retryWrites=true')
 
-//mongoose.connect('mongodb://localhost:27017/Yuri_DB', {
- //   useNewUrlParser: true
-//});
-
-mongoose.connect('mongodb+srv://rodrigomonteiro:user_adm@mflix-rmhbu.mongodb.net/admin?retryWrites=true', {
+mongoose.connect('mongodb://localhost:27017/Yuri_DB', {
     useNewUrlParser: true
 });
-
-// "mongodb+srv://rodrigomonteiro:user_adm@mflix-rmhbu.mongodb.net/admin"
-//"mongodb+srv://rodrigomonteiro:user_adm@cluster0-wwudj.gcp.mongodb.net/test" // --username rodrigomonteiro pwd: user_adm
 
 // torna a informação de io global
 app.use((req,res, next) => {
@@ -71,4 +64,3 @@ app.use(require('./routes')); // './routes' --> indica que está na pasta local 
 
 // troca app.listen para server.listen
 server.listen(process.env.PORT || 3333);
-
