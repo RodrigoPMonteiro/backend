@@ -27,9 +27,10 @@ io.on('connection', socket =>{
    })
 });
 
-//mongoose.connect('mongodb+srv://omnistack:omnistack@mflix-rmhbu.mongodb.net/omnistack?retryWrites=true')
+//mongoose.connect('mongodb+srv://omnistack:omnistack@mflix-rmhbu.mongodb.net/omnistack?retryWrites=true', {
+//mongoose.connect('mongodb://localhost:27017/Yuri_DB', {
 
-mongoose.connect('mongodb://localhost:27017/Yuri_DB', {
+ mongoose.connect('mongodb+srv://omnistack:omnistack@mflix-rmhbu.mongodb.net/test?retryWrites=true', {
     useNewUrlParser: true
 });
 
